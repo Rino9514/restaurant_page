@@ -1,0 +1,27 @@
+{
+  "name": "restaurant_page",
+  "version": "1.0.0",
+  "description": "Java script TOP  project of a restaurant page",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rino9514/restaurant_page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rino9514/restaurant_page/issues"
+  },
+  "homepage": "https://github.com/Rino9514/restaurant_page#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.6.6",
+    "webpack": "^5.105.4",
+    "webpack-cli": "^7.0.2",
+    "webpack-dev-server": "^5.2.3"
+  }
+}
