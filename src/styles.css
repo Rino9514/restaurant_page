@@ -1,0 +1,103 @@
+/* RESET STYLES */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+:root {
+  --v_white_color: #ffffff;
+  --v_black_text: #000000;
+  --v_grey_light_color: #e2e7f1;
+  --v_grey_dark_color: #8d8e91;
+  /* ===== BASE COLOR ===== */
+  /* normal = couleur principale */
+  --brown_base: rgb(165, 42, 42);
+
+  /* ===== WHITE / OFF-WHITE (teintes dérivées vers clair) ===== */
+  /* normal */
+  --btn_white_normal: #ffffff;
+  /* hover (léger assombrissement) */
+  --btn_white_hover: #f5eeee;
+  /* active (plus marqué) */
+  --btn_white_active: #e8dcdc;
+
+  /* ===== LIGHT BEIGE / ROSE TINT (dérivé du brown_base éclairci) ===== */
+  /* normal */
+  --btn_beige_normal: #f2dede;
+  /* hover */
+  --btn_beige_hover: #e5c2c2;
+  /* active */
+  --btn_beige_active: #d4a3a3;
+
+  /* ===== BROWN (ta couleur) ===== */
+  /* normal */
+  --btn_brown_normal: rgb(165, 42, 42);
+  /* hover (un peu plus foncé) */
+  --btn_brown_hover: rgb(140, 36, 36);
+  /* active (encore plus foncé) */
+  --btn_brown_active: rgb(110, 28, 28);
+
+  /* ===== DARK BROWN ===== */
+  /* normal */
+  --btn_brown_dark_normal: rgb(110, 28, 28);
+  /* hover */
+  --btn_brown_dark_hover: rgb(90, 22, 22);
+  /* active */
+  --btn_brown_dark_active: rgb(70, 18, 18);
+}
+
+html {
+  font-family: system-ui;
+  height: 100vh;
+  font-size: 24px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  background-color: var(--brown_base);
+}
+
+nav button {
+  border-radius: 30px;
+  background-color: var(--btn_beige_normal);
+  color: var(--v_black_text);
+  font-size: 0.6rem;
+  width: 10%;
+  padding: 8px 16px;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  background: var(--btn_beige_hover);
+  color: var(--v_grey_dark_color);
+  cursor: pointer;
+}
+
+button:active {
+  background: var(--btn_beige_active);
+  color: var(--v_grey_light_color);
+}
+
+#content {
+  background-image: url("../assets/restaurant.jpeg");
+  background-size: cover;
+  flex: 1;
+  opacity: 60%;
+}
+
