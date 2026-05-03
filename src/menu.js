@@ -16,12 +16,18 @@ export function loadMenu(div_content){
     { nom: "Sushi", prix: "5€", image: sushiImg },
   ];
 
+  const menu = document.createElement("div");
+  menu.classList.add("glass_card", "menu-card");
 
-  // add the main div
-  const div_menu = document.createElement("div");
-  div_menu.classList.add("menu-grid");
+  const menu_grid = document.createElement("div");
+  menu_grid.classList.add("menu-grid");
 
-  div_content.appendChild(div_menu);
+  const title = document.createElement("h1");
+  title.textContent = "Our Menu";
+
+  div_content.appendChild(menu);
+  menu.appendChild(title);
+  menu.appendChild(menu_grid);
 
   // add sub div for plate
   plats.forEach((plat) => {
@@ -40,7 +46,7 @@ export function loadMenu(div_content){
   div.appendChild(img);
   div.appendChild(titre);
   div.appendChild(prix);
-  div_menu.appendChild(div);
+  menu_grid.appendChild(div);
   });
 
 }

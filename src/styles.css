@@ -53,6 +53,8 @@
   --btn_brown_dark_active: rgb(70, 18, 18);
 }
 
+/* MAIN */
+
 html {
   font-family: system-ui;
   height: 100vh;
@@ -94,12 +96,12 @@ button:active {
   color: var(--v_grey_light_color);
 }
 
+
 #content {
   background-image: url("../assets/restaurant.jpeg");
   background-size: cover;
-  flex: 1;
-  opacity: 60%;
 
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,6 +116,38 @@ button:active {
   text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /* lisibilité sur l'image */
 }
 
+.glass_card{
+  background-color: rgba(0, 0, 0, 0.55);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  padding: 40px 60px;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+/* HOME */
+
+.home-card h1 {
+  color: var(--v_white_color);
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.home-card p {
+  color: var(--btn_beige_normal);
+  font-size: 1rem;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+/* menu */
 .menu-grid {
   display: grid;
   grid-template-columns: 1fr 1fr; /* 2 colonnes égales */
@@ -121,6 +155,13 @@ button:active {
   padding: 20px;
 }
 
+.menu-card h1 {
+  color: var(--v_white_color);
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
 .plat-card {
   display: flex;
   flex-direction: column;
@@ -149,4 +190,29 @@ button:active {
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
+}
+
+/* contact */
+
+.contact-card h1 {
+  color: var(--v_white_color);
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.contact-card h2 {
+  color: var(--btn_beige_normal);
+  font-size: 1.1rem;
+  margin-top: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-card p {
+  color: var(--v_white_color);
+  font-size: 0.7rem;
+  letter-spacing: 1px;
 }
